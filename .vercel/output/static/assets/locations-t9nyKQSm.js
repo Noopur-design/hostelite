@@ -1,1 +1,0 @@
-import{a as e}from"./simple-pages-BdxLnUDO.js";var t=e;export{t as component};

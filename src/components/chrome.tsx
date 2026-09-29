@@ -318,6 +318,16 @@ export function Reveal({ children, className, delay = 0 }: { children: ReactNode
   useEffect(() => {
     const node = ref.current;
     if (!node) return undefined;
+    if (typeof IntersectionObserver === "undefined") {
+      setOn(true);
+      return undefined;
+    }
+    // Reveal immediately when already in or above the viewport — no first-load
+    // flash of empty sections for anything on screen at mount.
+    if (node.getBoundingClientRect().top < window.innerHeight * 0.92) {
+      setOn(true);
+      return undefined;
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry?.isIntersecting) {
@@ -325,10 +335,15 @@ export function Reveal({ children, className, delay = 0 }: { children: ReactNode
           observer.disconnect();
         }
       },
-      { threshold: 0.16 },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.01 },
     );
     observer.observe(node);
-    return () => observer.disconnect();
+    // Safety net: never leave content permanently hidden (tall/edge cases).
+    const fallback = window.setTimeout(() => setOn(true), 1600);
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, []);
   return (
     <div ref={ref} style={{ transitionDelay: `${delay}ms` }} className={cn("reveal", on && "reveal-in", className)}>
