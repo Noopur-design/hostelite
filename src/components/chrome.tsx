@@ -376,7 +376,12 @@ export function SelectField({
   function toggle() {
     if (!open && ref.current) {
       const rect = ref.current.getBoundingClientRect();
-      setUp(rect.bottom > window.innerHeight * 0.62);
+      // Open upward only when the menu (max ~16rem) wouldn't fit below and
+      // there is more room above — otherwise it flips up over content needlessly.
+      const menuHeight = 256;
+      const spaceBelow = window.innerHeight - rect.bottom;
+      const spaceAbove = rect.top;
+      setUp(spaceBelow < Math.min(menuHeight, spaceAbove) && spaceAbove > spaceBelow);
     }
     setOpen((current) => !current);
   }
