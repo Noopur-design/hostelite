@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/rent",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Homes for rent · HavenNest",
+      "hasCanvas": false,
+      "bodyTextLen": 3208,
+      "bodyTextHash": "5a9cbd78e7d4e08012da6db4b5009ceade5dc19cc5462b790376eea91f8b9fca",
+      "bodyTextPrefix": "HavenNest Buy Rent Projects Commercial Locations Insights List P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/rent-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Homes for rent · HavenNest",
+      "hasCanvas": false,
+      "bodyTextLen": 3192,
+      "bodyTextHash": "ab3d24c3136994eeac0b89e842f43bf2dc6b2004508f81d73f1df7c855b77597",
+      "bodyTextPrefix": "HavenNest Buy Rent Projects Commercial Locations Insights List P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/rent-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/rent-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

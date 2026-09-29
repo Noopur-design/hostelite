@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "HavenNest — Find a place worth coming home to.",
+      "hasCanvas": false,
+      "bodyTextLen": 2439,
+      "bodyTextHash": "2f17f46e4e9d596655d39d54ab1346a1b1b65b754be5b51d48b442b63bd5c5dc",
+      "bodyTextPrefix": "HavenNest Buy Rent Projects Commercial Locations Insights List P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "HavenNest — Find a place worth coming home to.",
+      "hasCanvas": false,
+      "bodyTextLen": 2423,
+      "bodyTextHash": "a3c981f4f3556072408fd2865c8406cbffa0f6eb4bbe5b4a11883082dab8c476",
+      "bodyTextPrefix": "HavenNest Buy Rent Projects Commercial Locations Insights List P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,1 @@
+import{s as e}from"./link-DS13atOP.js";import{t}from"./useNavigate-CbfAxXZL.js";import{a as n}from"./index-Cg_8hjVk.js";import{t as r}from"./listing-page-CrRe_W__.js";var i=e();function a(){let e=n.useSearch(),a=t();return(0,i.jsx)(r,{intent:`buy`,search:e,onSearch:e=>{a({to:`/buy`,search:e})}})}export{a as component};

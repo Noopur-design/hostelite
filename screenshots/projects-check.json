@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/projects",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "New projects · HavenNest",
+      "hasCanvas": false,
+      "bodyTextLen": 3188,
+      "bodyTextHash": "31f497ed38c7751f7e61b84230adaae84cf4195e46220065562e16bbcc5dc924",
+      "bodyTextPrefix": "HavenNest Buy Rent Projects Commercial Locations Insights List P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/projects-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "New projects · HavenNest",
+      "hasCanvas": false,
+      "bodyTextLen": 3172,
+      "bodyTextHash": "68a8515c3b0b8c568248d292f9d2131b82c9034f20bead1d3f78fc6e06eed47b",
+      "bodyTextPrefix": "HavenNest Buy Rent Projects Commercial Locations Insights List P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/projects-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/projects-check.json"
+}
